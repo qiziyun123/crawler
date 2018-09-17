@@ -7,8 +7,14 @@ package com.qizy.jsoupsrc.demo;
 public class DFSDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Node root = new Node("A");
+		Node nodeB = new Node("B");
+		nodeB.appendChild(new Node("E"))
+			 .appendChild(new Node("F"));
+		root.appendChild(nodeB)
+			.appendChild(new Node("C"))
+			.appendChild(new Node("D"));
+		root.traverse();
 	}
 
 }
